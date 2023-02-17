@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Dúo",
+    "label": "Mejor precio online",
+    "details": [
+      {
+        "icon": "IconInternet",
+        "text": "Fibra <strong>MAX</strong> de <strong>1Gb</strong>"
+      },
+      {
+        "icon": "IconLandline",
+        "text": "Fijo"
+      }
+    ],
+    "price": {
+      "value": 29,
+      "offer": "12 meses a",
+      "offerDetail": "Después 44€/mes"
+    }
+  },
+  {
+    "name": "Aurrera + 10GB",
+    "label": "Líneas adicionales +3€/mes",
+    "details": [
+      {
+        "icon": "IconInternet",
+        "text": "Fibra <strong>MAX</strong> de <strong>300Mb</strong>"
+      },
+      {
+        "icon": "IconMobile5g",
+        "text": "Móvil con <strong>10GB</strong>"
+      },
+      {
+        "icon": "IconMobile5g",
+        "text": "2ª línea con <strong>10GB</strong>"
+      },
+      {
+        "icon": "IconLandline",
+        "text": "Fijo",
+        "label": "GRATIS"
+      }
+    ],
+    "price": {
+      "value": 39,
+      "offer": "",
+      "offerDetail": "Precio definitivo"
+    }
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "name": "10 GB",
+    "nameLong": "Tarifa móvil con 10GB",
+    "details": [
+      "+ Llamadas ilimitadas",
+      "<strong>Cobertura móvil 5G</strong>"
+    ],
+    "price": {
+      "value": 9
+    },
+    "hightlight": false
+  },
+  {
+    "name": "30 GB",
+    "nameLong": "Tarifa móvil con 30GB",
+    "details": [
+      "+ Llamadas ilimitadas",
+      "<strong>Cobertura móvil 5G</strong>"
+    ],
+    "price": {
+      "value": 16
+    },
+    "hightlight": false
+  },
+  {
+    "name": "GB ilimitados",
+    "nameLong": "Tarifa móvil con GB ilimitados",
+    "details": [
+      "+ Llamadas ilimitadas",
+      "<strong>Cobertura móvil 5G</strong>"
+    ],
+    "price": {
+      "value": 16,
+      "offer": "3 meses a",
+      "offerDetail": "Después 32€/mes"
+    },
+    "hightlight": true
+  }
+]
