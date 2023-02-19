@@ -62,7 +62,7 @@ defineProps({
     padding: 24px 16px;
     text-align: center;
 
-    @media (min-width: 1024px) {
+    @include for-desktop() {
         padding: 24px;
     }
 }
@@ -71,7 +71,7 @@ defineProps({
     padding: 24px 16px;
     margin-top: auto;
 
-    @media (min-width: 1024px) {
+    @include for-desktop() {
         padding: 24px;
     }
 

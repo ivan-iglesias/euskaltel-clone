@@ -66,7 +66,7 @@ const onClick = (title) => console.log(`Plan: ${title}`);
         grid-column-gap: 10px;
         text-align: start;
 
-        @media (min-width: 1024px) {
+        @include for-desktop() {
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -92,7 +92,7 @@ const onClick = (title) => console.log(`Plan: ${title}`);
     .price {
         margin-bottom: 16px;
 
-        @media (min-width: 1024px) {
+        @include for-desktop() {
             margin: 16px 0;
         }
     }

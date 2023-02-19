@@ -15,7 +15,10 @@
   --color-grey-600: #7f7f7f;
   --font-size: 16px;
   --border-radius: 8px;
-  --wrapper-width: 960px;
+  --wrapper-width: 1440px;
+
+  --font-family-primary: "Poppins", sans-serif;
+  --font-family-secondary: "Lato", sans-serif;
 }
 
 *,
@@ -27,16 +30,29 @@
   font-weight: normal;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   min-height: 100vh;
   color: var(--color-text);
   line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 50px 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-family-primary);
+}
+
+strong {
+  font-weight: 700;
 }
 
 .wrapper {
@@ -47,6 +63,18 @@ body {
   padding-left: 20px;
 }
 
-strong {
-  font-weight: 700;
+/** Nav links pipe separator */
+.links-pipe li {
+  border-left: solid 1px var(--color-grey-400);
+  padding: 0 .5rem;
+  margin: .3rem 0;
+}
+
+.links-pipe li:first-child{
+  border-left: none;
+  padding-left: 0;
+}
+
+.links-pipe li:last-child{
+  padding-right: 0;
 }

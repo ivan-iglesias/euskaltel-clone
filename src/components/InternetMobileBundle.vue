@@ -72,7 +72,6 @@ const onClick = (title) => console.log(`Bundle: ${title}`);
         display: flex;
         flex-direction: column;
         text-align: start;
-        text-align: start;
         gap: 16px;
 
         &__title {

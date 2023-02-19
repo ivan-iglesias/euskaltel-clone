@@ -1,0 +1,47 @@
+$breakpoints : (
+   "md":  768px,
+   "lg":  992px,
+   "xl":  1200px
+);
+
+@mixin for-tablet {
+  @media screen and (min-width: map-get($breakpoints, "md")) {
+      @content;
+  }
+}
+
+@mixin for-desktop {
+  @media screen and (min-width: map-get($breakpoints, "lg")) {
+      @content;
+  }
+}
+
+@mixin for-wide-screen {
+  @media screen and (min-width: map-get($breakpoints, "xl")) {
+      @content;
+  }
+}
+
+.show-tablet {
+  display: none;
+
+  @include for-tablet() {
+    display: inherit;
+  }
+}
+
+.show-desktop {
+  display: none;
+
+  @include for-desktop() {
+    display: inherit;
+  }
+}
+
+.show-wide-screen {
+  display: none;
+
+  @include for-wide-screen() {
+    display: inherit;
+  }
+}

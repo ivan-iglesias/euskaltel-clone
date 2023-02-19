@@ -36,7 +36,7 @@ defineProps({
     font-size: 40px;
     margin: 8px 0;
 
-    @media (min-width: 1024px) {
+    @include for-desktop() {
         font-size: 48px;
     }
 
