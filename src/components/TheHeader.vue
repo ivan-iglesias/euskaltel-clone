@@ -8,6 +8,7 @@ import IconMobile5g from "@/components/icons/IconMobile5g.vue";
 import IconTv from "@/components/icons/IconTv.vue";
 import IconShop from "@/components/icons/IconShop.vue";
 import IconAlarmak from "@/components/icons/IconAlarmak.vue";
+import IconUser from "@/components/icons/IconUser.vue";
 
 const onCmnClick = () => console.log('CMN Click');
 
@@ -28,7 +29,7 @@ const onCmnClick = () => console.log('CMN Click');
             </ul>
           </div>
 
-          <div class="header__secondary-right">
+          <div class="header__right">
             <ul class="header__links links-pipe mr-2">
               <li><a href="#" class="header__secondary-link">Ayuda</a></li>
               <li><a href="#" class="header__secondary-link">Contacto</a></li>
@@ -60,13 +61,17 @@ const onCmnClick = () => console.log('CMN Click');
             <li><a href="#" class="header__primary-link"><IconAlarmak class="mr-2" />Alarmak</a></li>
           </ul>
 
-          <div>
+          <div class="header__right">
             <BaseButton
               type="white"
               @on-click-button="onCmnClick()"
             >
               <IconLandline class="mr-2" />900 825 606
             </BaseButton>
+
+            <div class="header__login">
+              <IconUser class="header__login-icon" /><span class="show-desktop">Área cliente</span>
+            </div>
           </div>
 
         </nav>
@@ -93,12 +98,6 @@ const onCmnClick = () => console.log('CMN Click');
     flex-direction: row;
     justify-content: space-between;
     align-items: center
-  }
-
-  &__secondary-right {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
   }
 
   &__secondary-link {
@@ -142,7 +141,46 @@ const onCmnClick = () => console.log('CMN Click');
     list-style: none;
 
     &--wide {
-      gap: 40px;
+      @include for-desktop() {
+        gap: 16px;
+        font-size: .85rem;
+      }
+
+      @include for-wide-screen() {
+        gap: 40px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .header__left,
+  .header__fill,
+  .header__right {
+    display: flex;
+    flex-direction: row;
+    gap: 16px
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    padding-left: 1rem;
+    border-left: solid 2px white;
+
+  }
+
+  &__login-icon {
+    border-radius: 50px;
+    background-color: white;
+    color: var(--color-primary);
+    margin-right: .5rem;
+    padding: 4px;
+
+    &:hover {
+        background-color: var(--color-primary);
+        color: white;
     }
   }
 }
