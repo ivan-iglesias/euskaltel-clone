@@ -166,9 +166,15 @@ const onCmnClick = () => console.log('CMN Click');
     align-items: center;
     cursor: pointer;
     font-weight: 700;
-    padding-left: 1rem;
+    padding: 0 1rem;
     border-left: solid 2px white;
+    border-radius: var(--border-radius);
+    border-color: transparent;
 
+    &:hover {
+        background-color: white;
+        color: var(--color-primary);
+    }
   }
 
   &__login-icon {
@@ -177,11 +183,8 @@ const onCmnClick = () => console.log('CMN Click');
     color: var(--color-primary);
     margin-right: .5rem;
     padding: 4px;
-
-    &:hover {
-        background-color: var(--color-primary);
-        color: white;
-    }
+    border: var(--color-primary) 1px solid;
+    stroke-width: 2;
   }
 }
 </style>
