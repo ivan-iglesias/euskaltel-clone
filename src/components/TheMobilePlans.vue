@@ -21,6 +21,5 @@ import MobilePlan from "./MobilePlan.vue";
     gap: 16px;
     justify-content: center;
     margin: 1rem 0;
-    font-size: .8rem;
 }
 </style>

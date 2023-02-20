@@ -166,10 +166,13 @@ const onCmnClick = () => console.log('CMN Click');
     align-items: center;
     cursor: pointer;
     font-weight: 700;
-    padding: 0 1rem;
     border-left: solid 2px white;
     border-radius: var(--border-radius);
     border-color: transparent;
+
+    @include for-desktop() {
+      padding: 0 .5rem;
+    }
 
     &:hover {
         background-color: white;

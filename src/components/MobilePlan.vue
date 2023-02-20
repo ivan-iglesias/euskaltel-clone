@@ -48,8 +48,8 @@ const onClick = (title) => console.log(`Plan: ${title}`);
 
 <style lang="scss">
 .plan {
-    width: 320px;
-    min-width: 320px;
+    width: 100%;
+    max-width: 360px;
 
     &__title {
         align-items: center;
@@ -76,7 +76,7 @@ const onClick = (title) => console.log(`Plan: ${title}`);
     &__container-wraper {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 12px;
 
         &--no-gap {
             gap: 0;
