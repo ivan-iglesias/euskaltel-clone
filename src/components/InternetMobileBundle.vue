@@ -61,8 +61,8 @@ const onClick = (title) => console.log(`Bundle: ${title}`);
 
 <style lang="scss">
 .bundle {
-    width: 280px;
-    min-width: 280px;
+    width: 100%;
+    max-width: 280px;
 
     &__label {
         margin-bottom: 1rem;

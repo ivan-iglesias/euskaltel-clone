@@ -33,11 +33,11 @@ defineProps({
 
 <style lang="scss">
 .price {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 8px 0;
 
     @include for-desktop() {
-        font-size: 48px;
+        font-size: 3rem;
     }
 
     &__number {

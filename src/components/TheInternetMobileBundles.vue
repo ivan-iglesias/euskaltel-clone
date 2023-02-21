@@ -20,6 +20,6 @@ import InternetMobileBundle from "./InternetMobileBundle.vue";
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
-    margin: 1rem 0;
+    margin: 1rem;
 }
 </style>
