@@ -142,11 +142,6 @@ const onCmnClick = () => console.log('CMN Click');
 
     &--wide {
       @include for-desktop() {
-        gap: 16px;
-        font-size: .85rem;
-      }
-
-      @include for-wide-screen() {
         gap: 40px;
         font-size: 1rem;
       }
