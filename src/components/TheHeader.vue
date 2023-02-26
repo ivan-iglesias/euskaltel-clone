@@ -2,6 +2,7 @@
 import BaseButton from "@/components/base/BaseButton.vue";
 
 import IconLogo from "@/components/icons/IconLogo.vue";
+import IconLogoSmall from "@/components/icons/IconLogoSmall.vue";
 import IconInternet from "@/components/icons/IconInternet.vue";
 import IconLandline from "@/components/icons/IconLandline.vue";
 import IconMobile5g from "@/components/icons/IconMobile5g.vue";
@@ -9,6 +10,16 @@ import IconTv from "@/components/icons/IconTv.vue";
 import IconShop from "@/components/icons/IconShop.vue";
 import IconAlarmak from "@/components/icons/IconAlarmak.vue";
 import IconUser from "@/components/icons/IconUser.vue";
+import { useBreakpoints } from "@/composables/useBreakpoints";
+
+let { isGreaterThan, breakpoints } = useBreakpoints();
+
+const logos = {
+  IconLogo,
+  IconLogoSmall
+};
+
+const getLogoName = () => isGreaterThan(breakpoints.tablet) ? 'IconLogo' : 'IconLogoSmall';
 
 const onCmnClick = () => console.log('CMN Click');
 
@@ -50,7 +61,7 @@ const onCmnClick = () => console.log('CMN Click');
         <nav class="header__primary-nav">
 
           <a href="#" title="Icono Euskaltel">
-            <IconLogo />
+            <component :is="logos[getLogoName()]"></component>
           </a>
 
           <ul class="header__links header__links--wide show-desktop">
