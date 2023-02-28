@@ -51,6 +51,27 @@ h1, h2, h3, h4, h5 {
   font-family: var(--font-family-primary);
 }
 
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: .7rem;
+}
+
+p.description {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 640px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  p.description {
+    font-size: 1.2rem;
+  }
+}
+
 strong {
   font-weight: 700;
 }

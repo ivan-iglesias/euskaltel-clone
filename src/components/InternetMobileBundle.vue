@@ -63,6 +63,7 @@ const onClick = (title) => console.log(`Bundle: ${title}`);
 .bundle {
     width: 100%;
     max-width: 280px;
+    background: white;
 
     &__label {
         margin-bottom: 1rem;

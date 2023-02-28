@@ -8,7 +8,7 @@ defineProps({
     plan: Object
 });
 
-const onClick = (title) => console.log(`Plan: ${title}`);
+const onClick = (title) => console.log(`Mobile Plan: ${title}`);
 
 </script>
 
@@ -50,6 +50,7 @@ const onClick = (title) => console.log(`Plan: ${title}`);
 .plan {
     width: 100%;
     max-width: 360px;
+    background: white;
 
     &__title {
         align-items: center;

@@ -14,8 +14,8 @@ import homeSliders from '@/data/HomeSliders.json';
   <main class="main">
     <BaseCarrousel :sliders="homeSliders" />
     <TheCoverageBanner />
-    <TheMobilePlans />
     <TheInternetMobileBundles />
+    <TheMobilePlans />
   </main>
 </template>
 
