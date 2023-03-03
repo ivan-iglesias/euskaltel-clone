@@ -32,18 +32,82 @@
       },
       {
         "icon": "IconMobile5g",
-        "text": "2ª línea con <strong>10GB</strong>"
+        "text": "2ª línea con <strong>10GB</strong>",
+        "label": "GRATIS"
       },
       {
         "icon": "IconLandline",
-        "text": "Fijo",
-        "label": "GRATIS"
+        "text": "Fijo"
       }
     ],
     "price": {
       "value": 39,
       "offer": "",
-      "offerDetail": "Precio definitivo"
+      "offerDetail": "Precio final"
+    }
+  },
+  {
+    "name": "Osoa Infinity",
+    "label": "Líneas adicionales +3€/mes",
+    "details": [
+      {
+        "icon": "IconInternet",
+        "text": "Fibra <strong>MAX</strong> de <strong>300Mb</strong>"
+      },
+      {
+        "icon": "IconMobile5g",
+        "text": "Móvil con <strong>GB ilimitados</strong>"
+      },
+      {
+        "icon": "IconMobile5g",
+        "text": "2ª línea con <strong>GB ilimitados</strong>",
+        "label": "GRATIS"
+      },
+      {
+        "icon": "IconTv",
+        "text": "Ocio TV"
+      },
+      {
+        "icon": "IconLandline",
+        "text": "Fijo"
+      }
+    ],
+    "price": {
+      "value": 59,
+      "offer": "",
+      "offerDetail": "Precio final"
+    }
+  },
+  {
+    "name": "Osoa Infinity Netflix",
+    "label": "Líneas adicionales +3€/mes",
+    "details": [
+      {
+        "icon": "IconInternet",
+        "text": "Fibra <strong>MAX</strong> de <strong>300Mb</strong>"
+      },
+      {
+        "icon": "IconMobile5g",
+        "text": "Móvil con <strong>GB ilimitados</strong>"
+      },
+      {
+        "icon": "IconMobile5g",
+        "text": "2ª línea con <strong>GB ilimitados</strong>",
+        "label": "GRATIS"
+      },
+      {
+        "icon": "IconTv",
+        "text": "Ocio TV"
+      },
+      {
+        "icon": "IconNetflix",
+        "text": "<strong>Netflix FullHG</strong>"
+      }
+    ],
+    "price": {
+      "value": 69,
+      "offer": "",
+      "offerDetail": "Precio final"
     }
   }
 ]

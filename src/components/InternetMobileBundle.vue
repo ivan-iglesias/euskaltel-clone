@@ -6,6 +6,8 @@ import BasePrice from "@/components/base/BasePrice.vue";
 import IconInternet from "@/components/icons/IconInternet.vue";
 import IconLandline from "@/components/icons/IconLandline.vue";
 import IconMobile5g from "@/components/icons/IconMobile5g.vue";
+import IconTv from "@/components/icons/IconTv.vue";
+import IconNetflix from "@/components/icons/IconNetflix.vue";
 
 defineProps({
     bundle: Object
@@ -14,7 +16,9 @@ defineProps({
 const icons = {
     IconInternet,
     IconLandline,
-    IconMobile5g
+    IconMobile5g,
+    IconTv,
+    IconNetflix
 }
 
 const onClick = (title) => console.log(`Bundle: ${title}`);

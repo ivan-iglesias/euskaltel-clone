@@ -1,16 +1,18 @@
 <template>
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M4.5 17L19.5 17C20.3284 17 21 16.3284 21 15.5V5C21 4.17157 20.3284 3.5 19.5 3.5L4.5 3.5C3.67157 3.5 3 4.17157 3 5V15.5C3 16.3284 3.67157 17 4.5 17Z"
+      d="M20.1667 16L1.83333 16C1.09695 16 0.5 15.403 0.5 14.6667L0.5 1.83333C0.5 1.09695 1.09695 0.5 1.83333 0.5L20.1667 0.5C20.903 0.5 21.5 1.09695 21.5 1.83333V14.6667C21.5 15.403 20.903 16 20.1667 16Z"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
+      stroke-width="1.5"
     />
     <path
-      d="M15 20H9"
+      d="M14.6667 20.1667H7.33337"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
+      stroke-width="1.5"
     />
   </svg>
 </template>
