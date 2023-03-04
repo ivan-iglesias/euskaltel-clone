@@ -1,0 +1,23 @@
+[
+  {
+    "image": "IconCoverage5g",
+    "title": "Cobertura 5G",
+    "text": "Aumentamos el número de antenas móviles e incorporamos la tecnología 5G para que puedas disfrutar de la máxima velocidad.",
+    "link": "#"
+  },
+  {
+    "image": "IconWifi",
+    "title": "WiFi con cobertura total",
+    "text": "Te aseguramos cobertura total en tu casa gracias a lo último en tecnología WiFi y el WiFi Mesh."
+  },
+  {
+    "image": "IconFibramax",
+    "title": "fibra MAX",
+    "text": "La fibra elevada a la máxima potencia. Hasta 10 Gb simétricos, lag-free y WiFi 6 universal."
+  },
+  {
+    "image": "IconWorld",
+    "title": "La atención mejor valorada",
+    "text": "Nos encanta escucharte y hablamos tu mismo idioma. Por eso dicen que nuestra atención al cliente es la mejor :)"
+  }
+]

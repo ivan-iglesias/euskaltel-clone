@@ -7,7 +7,7 @@ import BaseCarrouselNavigation from "@/components/base/BaseCarrouselNavigation.v
 import 'swiper/css';
 
 defineProps({
-  sliders: Object
+  slides: Object
 });
 
 const modules = [Autoplay];
@@ -31,9 +31,8 @@ const changeSlide = (index) => swiperInstance.slideTo(index);
       disableOnInteraction: true,
     }"
     @slideChange="onSlideChange"
-    class="mySwiper"
   >
-    <swiper-slide v-for="slide in sliders">
+    <swiper-slide v-for="slide in slides">
       <picture>
         <source media="(max-width: 480px)" :srcset="'./images/banners/mobile/' + slide.image">
         <source media="(max-width: 768px)" :srcset="'./images/banners/tablet/' + slide.image">
@@ -45,7 +44,7 @@ const changeSlide = (index) => swiperInstance.slideTo(index);
   </swiper>
 
   <BaseCarrouselNavigation
-    :sliders="sliders"
+    :slides="slides"
     :currentSlide="currentSlide"
     @change-slide="changeSlide"
   />

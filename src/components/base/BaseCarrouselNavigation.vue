@@ -2,7 +2,7 @@
 import { useBreakpoints } from "@/composables/useBreakpoints";
 
 defineProps({
-  sliders: Array,
+  slides: Array,
   currentSlide: Number,
 });
 
@@ -16,7 +16,7 @@ let { isMobile } = useBreakpoints();
     <div v-if="isMobile()" class="carrousel-nav-mobile">
       <div class="carrousel-nav-mobile__links">
         <div
-          v-for="(slide, index) in sliders"
+          v-for="(slide, index) in slides"
           :class="{
               'carrousel-nav-mobile__link': true,
               'carrousel-nav-mobile__link--active': currentSlide == index,
@@ -25,8 +25,8 @@ let { isMobile } = useBreakpoints();
       </div>
 
       <div class="carrousel-nav-mobile__info">
-        <div><strong>{{ sliders[currentSlide].text }}</strong></div>
-        <div><strong>{{ currentSlide + 1 }}/{{ sliders.length }}</strong></div>
+        <div><strong>{{ slides[currentSlide].text }}</strong></div>
+        <div><strong>{{ currentSlide + 1 }}/{{ slides.length }}</strong></div>
       </div>
     </div>
 
@@ -35,7 +35,7 @@ let { isMobile } = useBreakpoints();
       <div class="carrousel-nav__title">Ofertas destacadas</div>
       <ul class="carrousel-nav__links">
         <li
-          v-for="(slide, index) in sliders"
+          v-for="(slide, index) in slides"
           @click="$emit('changeSlide', index)"
           :class="{
               'carrousel-nav__link': true,

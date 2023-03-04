@@ -19,19 +19,6 @@ const onClick = () => console.log(`Coverage feature`);
       </div>
     </section>
   </div>
-
-  <!-- <div class="wrapper">
-    <section class="banner-coverage">
-      <div class="banner-coverage__container">
-        <IconPin class="banner-coverage__icon" />
-        <div><strong>¿Puedes tener Euskaltel en tu casa?</strong></div>
-        <BaseButton
-          @on-click-button="onClick()"
-          class="banner-coverage__button"
-        >Compruébalo</BaseButton>
-      </div>
-    </section>
-  </div> -->
 </template>
 
 <style lang="scss">

@@ -16,7 +16,6 @@
   --font-size: 16px;
   --border-radius: 8px;
   --wrapper-width: 1440px;
-
   --font-family-primary: "Poppins", sans-serif;
   --font-family-secondary: "Lato", sans-serif;
 }
@@ -89,6 +88,19 @@ strong {
     padding-right: 48px;
     padding-left: 48px;
   }
+}
+
+/* links */
+.link {
+  color: var(--color-primary);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link:active,
+.link:focus,
+.link:hover:not([disabled]) {
+  color: var(--color-primary-dark);
 }
 
 /** Nav links pipe separator */

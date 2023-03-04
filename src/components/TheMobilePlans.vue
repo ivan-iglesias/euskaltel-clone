@@ -6,7 +6,7 @@ import MobilePlan from "./MobilePlan.vue";
 <template>
   <section class="mobile-plan">
     <div class="wrapper">
-      <h2>Tarifas móviles con 5G </h2>
+      <h2>Tarifas móviles con 5G</h2>
       <p class="description">Tarifas de móvil con llamadas ilimitadas y máxima velocidad </p>
 
       <div class="mobile-plan__cards">
