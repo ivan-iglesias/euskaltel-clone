@@ -32,7 +32,7 @@ const icons = {
 
 <style lang="scss">
 .why-choose-us-list-item {
-  box-shadow: 4px 4px 20px var(--color-grey-400);
+  box-shadow: 4px 4px 2px var(--color-grey-400);
   border: 1px solid var(--color-grey-400);
   border-radius: var(--border-radius);
   display: flex;
