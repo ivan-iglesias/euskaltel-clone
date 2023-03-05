@@ -1,9 +1,8 @@
 <script setup>
-import BaseButton from "@/components/base/BaseButton.vue";
+import BaseButton from '@/components/base/BaseButton.vue';
 import IconPin from '@/components/icons/IconPin.vue';
 
 const onClick = () => console.log(`Coverage feature`);
-
 </script>
 
 <template>

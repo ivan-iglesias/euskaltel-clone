@@ -13,33 +13,33 @@ let { isMobile } = useBreakpoints();
   <div class="wrapper">
 
     <!-- mobile -->
-    <div v-if="isMobile()" class="carrousel-nav-mobile">
-      <div class="carrousel-nav-mobile__links">
+    <div v-if="isMobile()" class="carousel-nav-mobile">
+      <div class="carousel-nav-mobile__links">
         <div
           v-for="(slide, index) in slides"
           :class="{
-              'carrousel-nav-mobile__link': true,
-              'carrousel-nav-mobile__link--active': currentSlide == index,
+              'carousel-nav-mobile__link': true,
+              'carousel-nav-mobile__link--active': currentSlide == index,
           }"
         ></div>
       </div>
 
-      <div class="carrousel-nav-mobile__info">
+      <div class="carousel-nav-mobile__info">
         <div><strong>{{ slides[currentSlide].text }}</strong></div>
         <div><strong>{{ currentSlide + 1 }}/{{ slides.length }}</strong></div>
       </div>
     </div>
 
     <!-- desktop -->
-    <div v-if="! isMobile()" class="carrousel-nav">
-      <div class="carrousel-nav__title">Ofertas destacadas</div>
-      <ul class="carrousel-nav__links">
+    <div v-if="! isMobile()" class="carousel-nav">
+      <div class="carousel-nav__title">Ofertas destacadas</div>
+      <ul class="carousel-nav__links">
         <li
           v-for="(slide, index) in slides"
           @click="$emit('changeSlide', index)"
           :class="{
-              'carrousel-nav__link': true,
-              'carrousel-nav__link--active': currentSlide == index,
+              'carousel-nav__link': true,
+              'carousel-nav__link--active': currentSlide == index,
           }"
         >{{ slide.text }}</li>
       </ul>
@@ -49,7 +49,7 @@ let { isMobile } = useBreakpoints();
 </template>
 
 <style lang="scss">
-.carrousel-nav-mobile {
+.carousel-nav-mobile {
   margin: .5rem 0;
 
   &__links {
@@ -84,7 +84,7 @@ let { isMobile } = useBreakpoints();
   }
 }
 
-.carrousel-nav {
+.carousel-nav {
   display: flex;
   flex-direction: row;
   align-items: baseline;

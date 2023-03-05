@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay } from "swiper";
-import BaseCarrouselNavigation from "@/components/base/BaseCarrouselNavigation.vue";
+import BaseCarouselNavigation from "@/components/base/BaseCarouselNavigation.vue";
 
 import 'swiper/css';
 
@@ -43,7 +43,7 @@ const changeSlide = (index) => swiperInstance.slideTo(index);
     </swiper-slide>
   </swiper>
 
-  <BaseCarrouselNavigation
+  <BaseCarouselNavigation
     :slides="slides"
     :currentSlide="currentSlide"
     @change-slide="changeSlide"

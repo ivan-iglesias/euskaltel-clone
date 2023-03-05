@@ -1,16 +1,15 @@
 <script setup>
-import BaseButton from "@/components/base/BaseButton.vue";
-
-import IconLogo from "@/components/icons/IconLogo.vue";
-import IconLogoSmall from "@/components/icons/IconLogoSmall.vue";
-import IconInternet from "@/components/icons/IconInternet.vue";
-import IconLandline from "@/components/icons/IconLandline.vue";
-import IconMobile5g from "@/components/icons/IconMobile5g.vue";
-import IconTv from "@/components/icons/IconTv.vue";
-import IconShop from "@/components/icons/IconShop.vue";
-import IconAlarmak from "@/components/icons/IconAlarmak.vue";
-import IconUser from "@/components/icons/IconUser.vue";
-import { useBreakpoints } from "@/composables/useBreakpoints";
+import BaseButton from '@/components/base/BaseButton.vue';
+import IconLogo from '@/components/icons/IconLogo.vue';
+import IconLogoSmall from '@/components/icons/IconLogoSmall.vue';
+import IconInternet from '@/components/icons/IconInternet.vue';
+import IconLandline from '@/components/icons/IconLandline.vue';
+import IconMobile5g from '@/components/icons/IconMobile5g.vue';
+import IconTv from '@/components/icons/IconTv.vue';
+import IconShop from '@/components/icons/IconShop.vue';
+import IconAlarmak from '@/components/icons/IconAlarmak.vue';
+import IconUser from '@/components/icons/IconUser.vue';
+import { useBreakpoints } from '@/composables/useBreakpoints';
 
 let { isGreaterThan, breakpoints } = useBreakpoints();
 
@@ -22,7 +21,6 @@ const logos = {
 const getLogoName = () => isGreaterThan(breakpoints.tablet) ? 'IconLogo' : 'IconLogoSmall';
 
 const onCmnClick = () => console.log('CMN Click');
-
 </script>
 
 <template>
@@ -76,9 +74,7 @@ const onCmnClick = () => console.log('CMN Click');
             <BaseButton
               type="white"
               @on-click-button="onCmnClick()"
-            >
-              <IconLandline class="mr-2" />900 825 606
-            </BaseButton>
+            ><IconLandline class="mr-2" />900 825 606</BaseButton>
 
             <div class="header__login">
               <IconUser class="header__login-icon" /><span class="show-desktop">Área cliente</span>
@@ -181,8 +177,8 @@ const onCmnClick = () => console.log('CMN Click');
     }
 
     &:hover {
-        background-color: white;
-        color: var(--color-primary);
+      background-color: white;
+      color: var(--color-primary);
     }
   }
 

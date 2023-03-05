@@ -1,11 +1,11 @@
 <script setup>
-import IconCoverage5g from '../icons/WhyChooseUs/IconCoverage5g.vue';
-import IconFibramax from '../icons/WhyChooseUs/IconFibramax.vue';
-import IconWifi from '../icons/WhyChooseUs/IconWifi.vue';
-import IconWorld from '../icons/WhyChooseUs/IconWorld.vue';
+import IconCoverage5g from '@/components/icons/WhyChooseUs/IconCoverage5g.vue';
+import IconFibramax from '@/components/icons/WhyChooseUs/IconFibramax.vue';
+import IconWifi from '@/components/icons/WhyChooseUs/IconWifi.vue';
+import IconWorld from '@/components/icons/WhyChooseUs/IconWorld.vue';
 
 defineProps({
-  card: Object
+  item: Object
 });
 
 const icons = {
@@ -17,26 +17,28 @@ const icons = {
 </script>
 
 <template>
-  <div class="why-choose-us-card">
-    <div class="why-choose-us-card__image">
-      <component :is="icons[card.image]"></component>
+  <div class="why-choose-us-list-item">
+    <div class="why-choose-us-list-item__image">
+      <component :is="icons[item.image]"></component>
     </div>
-    <div class="why-choose-us-card__content">
-      <p class="why-choose-us-card__title">{{ card.title }}</p>
-      <hr class="why-choose-us-card__separator">
-      <p class="mb-2">{{ card.text }}</p>
-      <a v-if="card.link" :href="card.link" class="link">más info</a>
+    <div class="why-choose-us-list-item__content">
+      <p class="why-choose-us-list-item__title">{{ item.title }}</p>
+      <hr class="why-choose-us-list-item__separator">
+      <p class="mb-2">{{ item.text }}</p>
+      <a v-if="item.link" :href="item.link" class="link">más info</a>
     </div>
   </div>
 </template>
 
 <style lang="scss">
-.why-choose-us-card {
+.why-choose-us-list-item {
   box-shadow: 4px 4px 20px var(--color-grey-400);
+  border: 1px solid var(--color-grey-400);
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   min-height: 320px;
+  margin: .5rem;
 
   @include for-tablet() {
     flex-direction: row;

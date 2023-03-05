@@ -4,7 +4,7 @@ import TheMobilePlans from '@/components/TheMobilePlans.vue';
 import TheInternetMobileBundles from '@/components/TheInternetMobileBundles.vue';
 import TheCoverageBanner from '@/components/TheCoverageBanner.vue';
 import TheWhyChooseUs from '@/components/TheWhyChooseUs.vue';
-import BaseCarrousel from '@/components/base/BaseCarrousel.vue';
+import BaseCarousel from '@/components/base/BaseCarousel.vue';
 import homeSlides from '@/data/HomeSlides.json';
 </script>
 
@@ -13,7 +13,7 @@ import homeSlides from '@/data/HomeSlides.json';
   <TheHeader />
 
   <main class="main">
-    <BaseCarrousel :slides="homeSlides" />
+    <BaseCarousel :slides="homeSlides" />
     <TheCoverageBanner />
     <TheInternetMobileBundles />
     <TheWhyChooseUs />

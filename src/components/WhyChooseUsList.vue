@@ -1,5 +1,7 @@
 <script setup>
-import WhyChooseUsCard from './WhyChooseUsCard.vue';
+import { ref } from 'vue';
+import WhyChooseUsListItem from '@/components/WhyChooseUsListItem.vue';
+import { useBreakpoints } from '@/composables/useBreakpoints';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination } from 'swiper';
 
@@ -7,10 +9,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const props = defineProps({
-  template: {
-    type: String,
-    require: true
-  },
   slides: {
     type: Array,
     require: true
@@ -18,28 +16,55 @@ const props = defineProps({
 });
 
 const modules = [Pagination];
+
+let { isMobile } = useBreakpoints();
+
+let mobileView = ref(isMobile());
+
+onresize = () => mobileView.value = isMobile();
 </script>
 
 <template>
-  <div class="why-choose-us-carrousel">
+  <div class="why-choose-us-list">
+
+    <div class="why-choose-us-list__flex" v-if="! mobileView">
+      <WhyChooseUsListItem
+        v-for="slide in slides"
+        :item="slide"
+      />
+    </div>
+
     <swiper
+      v-if="mobileView"
       :slidesPerView="1.2"
-      :spaceBetween="32"
+      :spaceBetween="16"
       :modules="modules"
       :pagination="true"
     >
       <swiper-slide v-for="slide in slides">
-        <WhyChooseUsCard :card="slide" />
+        <WhyChooseUsListItem :item="slide" />
       </swiper-slide>
     </swiper>
+
   </div>
 </template>
 
 <style lang="scss">
-.why-choose-us-carrousel {
+.why-choose-us-list {
+  margin: 1rem 0;
+
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
   .swiper {
     width: 100%;
     height: 100%;
+    margin-top: 1rem;
   }
 
   .swiper-slide {
@@ -62,7 +87,7 @@ const modules = [Pagination];
   }
 
   .swiper-pagination-bullet-active {
-    background-color: var(--color-primary);;
+    background-color: var(--color-primary);
   }
 }
 </style>
