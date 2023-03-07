@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Xabier",
+    "gender": "male",
+    "text": "Un servicio técnico muy bueno. Es de agradecer",
+    "rating": 5
+  },
+  {
+    "name": "Iñaki",
+    "gender": "male",
+    "text": "Excelente servicio de Euskaltel tanto en television Premium como en Internet y telefonia movil. Eficacia en el servicio tecnico y amabilidad en las consultas telefonicas",
+    "rating": 4.5
+  },
+  {
+    "name": "Itxaso",
+    "gender": "female",
+    "text": "La atención al cliente de @euskaltel_sa de 10, un lujo que muy pocas empresas poseen.",
+    "rating": 4
+  },
+  {
+    "name": "Nerea",
+    "gender": "female",
+    "text": "Yo soy de euskaltel y me va RAPIDiSIM0 internet",
+    "rating": 5
+  },
+  {
+    "name": "TheGazker",
+    "gender": "male",
+    "text": "Muchas gracias por la ayuda un buen servicio. Muy rapido y eficaz",
+    "rating": 4.5
+  },
+  {
+    "name": "Jorge",
+    "gender": "male",
+    "text": "Servicio estupendo, ven por el cliente a un 1000%",
+    "rating": 5
+  },
+  {
+    "name": "José Luis",
+    "gender": "male",
+    "text": "Son muchos años con esa compañía de momento sigo contento.",
+    "rating": 4
+  },
+  {
+    "name": "Irene",
+    "gender": "female",
+    "text": "He cambiado de movil y todo ha sido perfecto, buena atención, rapido, la configuración de movil nuevo estaba perfecta, más no se puede pedir.",
+    "rating": 5
+  }
+]
