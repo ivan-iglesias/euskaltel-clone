@@ -1,0 +1,72 @@
+[
+  {
+    "brand": "Apple",
+    "name": "IPHONE 13",
+    "image": "iphone-13-blue-24.png",
+    "specs": {
+      "screen": "6,1\"",
+      "camera": "12Mpx",
+      "memory": "256GB"
+    },
+    "price": {
+      "value": 38,
+      "detail": "Paga al mes durante 24 meses"
+    }
+  },
+  {
+    "brand": "Honor",
+    "name": "MAGIC 4 LITE",
+    "image": "honor-magic-4-lite-24.png",
+    "specs": {
+      "screen": "6,81\"",
+      "camera": "48Mpx",
+      "memory": "128GB"
+    },
+    "price": {
+      "value": 12,
+      "detail": "Paga al mes durante 24 meses"
+    }
+  },
+  {
+    "brand": "Samsung",
+    "name": "GALAXY Z FLIP 4",
+    "image": "z-flip4-front-tabletop-back-graphite-24.png",
+    "specs": {
+      "screen": "6,7\"",
+      "camera": "12Mpx",
+      "memory": "256GB"
+    },
+    "price": {
+      "value": 42,
+      "detail": "Paga al mes durante 24 meses"
+    }
+  },
+  {
+    "brand": "Xiaomi",
+    "name": "REDMI 10 C",
+    "image": "xiaomi-redmi-10-c-negro-24.png",
+    "specs": {
+      "screen": "6,71\"",
+      "camera": "50Mpx",
+      "memory": "128GB"
+    },
+    "price": {
+      "value": 7,
+      "detail": "Paga al mes durante 24 meses"
+    }
+  },
+  {
+    "brand": "Honor",
+    "name": "X8",
+    "image": "honor-x8-negro-24.png",
+    "specs": {
+      "screen": "6,7\"",
+      "camera": "64Mpx",
+      "memory": "128GB"
+    },
+    "price": {
+      "value": 9,
+      "detail": "Paga al mes durante 24 meses"
+    }
+  }
+]

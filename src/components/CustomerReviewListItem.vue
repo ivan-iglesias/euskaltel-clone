@@ -31,11 +31,6 @@ const avatars = {
 </template>
 
 <style lang="scss">
-.star {
-  height: 24px;
-  width: 24px;
-}
-
 .customer-review-list-item {
   box-shadow: 4px 4px 2px var(--color-grey-400);
   border: 1px solid var(--color-grey-400);

@@ -1,6 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue';
-import CustomerReviewListItem from '@/components/CustomerReviewListItem.vue';
+import TopDevicesListItem from '@/components/TopDevicesListItem.vue';
 import { useBreakpoints } from '@/composables/useBreakpoints';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination } from 'swiper';
@@ -22,26 +22,25 @@ let { isMobile, isTablet, isLaptop } = useBreakpoints();
 const mobileView = ref(isMobile());
 
 const slidesPerView = computed(() => {
-  if (isMobile()) return 1.2;
-  if (isTablet()) return 2.2;
-  if (isLaptop()) return 3.2;
-  return 4.2;
+  if (isMobile()) return 1;
+  if (isTablet()) return 1.7;
+  if (isLaptop()) return 2.1;
+  return 2.5;
 });
 
 onresize = () => mobileView.value = isMobile();
 </script>
 
 <template>
-  <div class="customer-review-list">
+  <div class="top-devices-list">
 
     <swiper
       :slidesPerView="slidesPerView"
-      :spaceBetween="16"
       :modules="modules"
       :pagination="true"
     >
       <swiper-slide v-for="slide in slides">
-        <CustomerReviewListItem :item="slide" />
+        <TopDevicesListItem :item="slide" />
       </swiper-slide>
     </swiper>
 
@@ -49,7 +48,7 @@ onresize = () => mobileView.value = isMobile();
 </template>
 
 <style lang="scss">
-.customer-review-list {
+.top-devices-list {
   margin: 1rem 0;
 
   .swiper {

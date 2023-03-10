@@ -67,12 +67,6 @@ onresize = () => mobileView.value = isMobile();
     margin-top: 1rem;
   }
 
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .swiper-wrapper {
     margin-bottom: 48px;
   }

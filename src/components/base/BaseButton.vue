@@ -7,7 +7,7 @@ defineProps({
   type: {
     type: String,
     default: 'primary',
-    validator: val => ['primary', 'secondary', 'white'].includes(val)
+    validator: val => ['primary', 'secondary', 'tertiary', 'white'].includes(val)
   }
 });
 
@@ -30,6 +30,7 @@ function buttonClick(e) {
       'btn': true,
       'btn--primary': type == 'primary',
       'btn--secondary': type == 'secondary',
+      'btn--tertiary': type == 'tertiary',
       'btn--white': type == 'white',
     }"
   ><slot></slot></a>
@@ -39,6 +40,7 @@ function buttonClick(e) {
 .btn {
   border-radius: var(--border-radius);
   color: white;
+  font-weight: 700;
   padding: 8px 12px;
   text-decoration: none;
   transition: all .1s ease-in-out;
@@ -59,6 +61,16 @@ function buttonClick(e) {
 
     &:hover {
       background-color: var(--color-secondary-dark);
+    }
+  }
+
+  &--tertiary {
+    background-color: white;
+    color: var(--color-tertiary);
+
+    &:hover {
+      background-color: white;
+      color: var(--color-tertiary-dark);
     }
   }
 
