@@ -75,6 +75,7 @@ const onClick = (name) => console.log(`Device: ${name}`);
     height: auto;
     width: 100%;
     max-height: 100%;
+    max-width: 200px;
     filter: drop-shadow(0 8px 8px rgba(0,41,74,.6));
   }
 

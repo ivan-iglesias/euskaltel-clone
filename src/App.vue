@@ -6,6 +6,7 @@ import TheCoverageBanner from '@/components/TheCoverageBanner.vue';
 import TheWhyChooseUs from '@/components/TheWhyChooseUs.vue';
 import TheCustomerReview from '@/components/TheCustomerReview.vue';
 import TheTopDevices from '@/components/TheTopDevices.vue';
+import NewWifiMesh from '@/components/NewWifiMesh.vue';
 import BaseCarousel from '@/components/base/BaseCarousel.vue';
 import homeSlides from '@/data/HomeSlides.json';
 </script>
@@ -22,6 +23,7 @@ import homeSlides from '@/data/HomeSlides.json';
     <TheMobilePlans />
     <TheCustomerReview />
     <TheTopDevices />
+    <NewWifiMesh />
   </main>
 </template>
 
