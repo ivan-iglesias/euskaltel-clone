@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper center">
     <div class="new-wifi-mesh">
       <div class="new-wifi-mesh__content">
         <img
@@ -19,6 +19,8 @@
 .new-wifi-mesh {
   border-radius: var(--border-radius);
   background-color: var(--color-dark);
+  max-width: 800px;
+  width: 100%;
   color: var(--color-light);
   padding: 1rem;
   background-image: url('/images/logo-small-orange.svg');
@@ -28,10 +30,6 @@
 
   @include for-laptop() {
     background-position: -35% -40px;
-  }
-
-  @include for-desktop() {
-    background-position: -40% -40px;
   }
 }
 
