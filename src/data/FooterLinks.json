@@ -1,0 +1,111 @@
+[
+  {
+    "title": "INTERNET",
+    "links": [
+      {
+        "name": "<strong>Osoa Infinity:</strong> Fibra, Móvil ∞, Fijo y TV",
+        "link": "#1"
+      },
+      {
+        "name": "<strong>Osoa Infinity Netflix:</strong> Fibra, Móvil ∞, Fijo, TV y Netflix",
+        "link": "#2"
+      },
+      {
+        "name": "<strong>Aurrera:</strong> Fibra, Móvil y Fijo",
+        "link": "#"
+      },
+      {
+        "name": "<strong>Dúo:</strong> Fibra y Fijo",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "title": "MÓVIL",
+    "links": [
+      {
+        "name": "Tarifas solo móvil",
+        "link": "#"
+      },
+      {
+        "name": "Roaming",
+        "link": "#"
+      },
+      {
+        "name": "Cobertura",
+        "link": "#"
+      },
+      {
+        "name": "Seguros",
+        "link": "#"
+      },
+      {
+        "name": "Smartphones",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "title": "TV",
+    "links": [
+      {
+        "name": "Opciones",
+        "link": "#"
+      },
+      {
+        "name": "Netflix Fan",
+        "link": "#"
+      },
+      {
+        "name": "Lista de Canales TV",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "title": "OTROS",
+    "links": [
+      {
+        "name": "Test de Velocidad",
+        "link": "#"
+      },
+      {
+        "name": "Blog de Euskaltel",
+        "link": "#"
+      },
+      {
+        "name": "Cobertura de fibra",
+        "link": "#"
+      },
+      {
+        "name": "Opciones de Euskaltel",
+        "link": "#"
+      },
+      {
+        "name": "Internet del compromiso",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "title": "AYUDA",
+    "links": [
+      {
+        "name": "Pásate a Euskaltel",
+        "link": "#"
+      },
+      {
+        "name": "Instalación",
+        "link": "#"
+      },
+      {
+        "name": "Fibra",
+        "link": "#"
+      },
+      {
+        "name": "Móvil",
+        "link": "#"
+      }
+    ]
+  }
+]

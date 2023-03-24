@@ -28,6 +28,14 @@ $breakpoints : (
   }
 }
 
+.show-mobile {
+  display: inherit;
+
+  @include for-tablet() {
+    display: none;
+  }
+}
+
 .show-tablet {
   display: none;
 

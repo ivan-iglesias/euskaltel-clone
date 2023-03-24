@@ -1,5 +1,6 @@
 <script setup>
 import TheHeader from '@/components/TheHeader.vue';
+import TheFooter from '@/components/TheFooter.vue';
 import TheMobilePlans from '@/components/TheMobilePlans.vue';
 import TheInternetMobileBundles from '@/components/TheInternetMobileBundles.vue';
 import TheCoverageBanner from '@/components/TheCoverageBanner.vue';
@@ -27,6 +28,9 @@ import homeSlides from '@/data/HomeSlides.json';
     <TheWifiMesh />
     <TheFibraMaxBanner />
   </main>
+
+  <TheFooter />
+
 </template>
 
 <style scoped>

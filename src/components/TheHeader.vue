@@ -32,7 +32,7 @@ const onCmnClick = () => console.log('CMN Click');
 
           <div>
             <ul class="header__links links-pipe">
-              <li><a class="header__secondary-link header__secondary-link--active" href="#">Particulares</a></li>
+              <li><a href="#" class="header__secondary-link header__secondary-link--active">Particulares</a></li>
               <li><a href="#" class="header__secondary-link">Autónomos y Negocios</a></li>
               <li><a href="#" class="header__secondary-link">Empresas</a></li>
             </ul>
@@ -97,6 +97,7 @@ const onCmnClick = () => console.log('CMN Click');
 
   &__secondary {
     background: var(--color-grey-200);
+    padding: .3rem 0;
   }
 
   &__secondary-nav {
