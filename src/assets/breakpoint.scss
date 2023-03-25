@@ -52,6 +52,14 @@ $breakpoints : (
   }
 }
 
+.hide-from-laptop {
+  display: inherit;
+
+  @include for-laptop() {
+    display: none;
+  }
+}
+
 .show-desktop {
   display: none;
 

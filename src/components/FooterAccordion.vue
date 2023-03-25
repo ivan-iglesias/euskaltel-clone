@@ -30,7 +30,7 @@ function onClickTitle() {
 
     <div class="footer-accordion__title" @click="onClickTitle">
       <div class="footer-accordion__title-text">{{ title }}</div>
-      <IconArrowDown :class="showLinks ? 'rotate-180' : ''" class="show-mobile" />
+      <IconArrowDown :class="showLinks ? 'rotate-180' : ''" class="hide-from-laptop" />
     </div>
 
     <ul class="footer-accordion__links" v-show="showLinks">
@@ -75,10 +75,6 @@ function onClickTitle() {
 
   svg {
     color: var(--color-primary);
-  }
-
-  .rotate-180 {
-    transform: rotate(180deg);
   }
 }
 
