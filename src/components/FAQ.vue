@@ -59,7 +59,6 @@ let open = ref(false);
 
 .faq__question {
   max-width: 264px;
-  font-size: 1rem;
 
   @include for-tablet() {
     font-size: 1.05rem;
@@ -74,7 +73,6 @@ let open = ref(false);
 .faq__answer {
   margin-top: 1rem;
   line-height: 1.8rem;
-  font-size: 1rem;
   color: var(--color-text-light);
   animation: vertical-in .5s ease-in-out;
 }

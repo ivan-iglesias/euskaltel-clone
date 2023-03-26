@@ -10,6 +10,7 @@ import TheTopDevices from '@/components/TheTopDevices.vue';
 import TheWifiMesh from '@/components/TheWifiMesh.vue';
 import TheFibraMaxBanner from '@/components/TheFibraMaxBanner.vue';
 import TheFAQs from '@/components/TheFAQs.vue';
+import TheHireUs from '@/components/TheHireUs.vue';
 import BaseCarousel from '@/components/base/BaseCarousel.vue';
 import homeSlides from '@/data/HomeSlides.json';
 </script>
@@ -31,6 +32,7 @@ import homeSlides from '@/data/HomeSlides.json';
     <TheFAQs />
   </main>
 
+  <TheHireUs />
   <TheFooter />
 
 </template>

@@ -36,8 +36,7 @@ ul {
   padding: 0;
 }
 
-body {
-  min-height: 100vh;
+html {
   color: var(--color-text);
   line-height: 1.6;
   font-family: var(--font-family-secondary);
@@ -45,6 +44,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
   padding-top: 50px;
 }
 
@@ -92,8 +95,10 @@ strong {
   }
 }
 
-/* non standard */
 * {
+  text-size-adjust: none;
+
+  /* non standard */
   -webkit-tap-highlight-color: transparent;
 }
 
