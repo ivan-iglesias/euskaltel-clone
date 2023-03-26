@@ -1,8 +1,8 @@
 <script setup>
-import IconCoverage5g from '@/components/icons/WhyChooseUs/IconCoverage5g.vue';
-import IconFibramax from '@/components/icons/WhyChooseUs/IconFibramax.vue';
-import IconWifi from '@/components/icons/WhyChooseUs/IconWifi.vue';
-import IconWorld from '@/components/icons/WhyChooseUs/IconWorld.vue';
+import IconCoverage5g from '@/components/icons/Artwork/IconCoverage5g.vue';
+import IconFibramax from '@/components/icons/Artwork/IconFibramax.vue';
+import IconWifi from '@/components/icons/Artwork/IconWifi.vue';
+import IconWorld from '@/components/icons/Artwork/IconWorld.vue';
 
 defineProps({
   item: Object
