@@ -8,6 +8,7 @@ import TheWhyChooseUs from '@/components/TheWhyChooseUs.vue';
 import TheCustomerReview from '@/components/TheCustomerReview.vue';
 import TheTopDevices from '@/components/TheTopDevices.vue';
 import TheWifiMesh from '@/components/TheWifiMesh.vue';
+import TheTv from '@/components/TheTv.vue';
 import TheFibraMaxBanner from '@/components/TheFibraMaxBanner.vue';
 import TheFAQs from '@/components/TheFAQs.vue';
 import TheAlreadyCustomer from '@/components/TheAlreadyCustomer.vue';
@@ -29,6 +30,7 @@ import homeSlides from '@/data/HomeSlides.json';
     <TheCustomerReview />
     <TheTopDevices />
     <TheWifiMesh />
+    <TheTv />
     <TheFibraMaxBanner />
     <TheFAQs />
     <TheAlreadyCustomer />

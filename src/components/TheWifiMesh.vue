@@ -27,6 +27,7 @@
   background-position: -25% -40px;
   background-repeat: no-repeat;
   background-size: 40%;
+  margin-bottom: 3rem;
 
   @include for-laptop() {
     background-position: -35% -40px;
