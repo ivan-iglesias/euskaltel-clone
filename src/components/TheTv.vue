@@ -1,5 +1,6 @@
 <script setup>
 import TvDeviceInfo from '@/components/TvDeviceInfo.vue';
+import TvTrailersList from '@/components/TvTrailersList.vue';
 </script>
 
 <template>
@@ -12,8 +13,8 @@ import TvDeviceInfo from '@/components/TvDeviceInfo.vue';
           <TvDeviceInfo />
         </div>
         <div class="tv-section__column">
-          <h4>Nuestros favoritos</h4>
-          <div style="background-color: #ccc;width: 100%;">SLIDER</div>
+          <h4 class="tv-section__subtitle">Nuestros favoritos</h4>
+          <TvTrailersList />
         </div>
       </div>
     </div>
@@ -42,6 +43,14 @@ import TvDeviceInfo from '@/components/TvDeviceInfo.vue';
 
   @include for-desktop() {
     width: 50%;
+  }
+}
+
+.tv-section__subtitle {
+  text-align: center;
+
+  @include for-desktop() {
+    text-align: start;
   }
 }
 </style>

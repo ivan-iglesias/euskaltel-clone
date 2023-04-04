@@ -1,51 +1,53 @@
 <script setup>
 import { computed } from 'vue';
-import TopDevicesListItem from '@/components/TopDevicesListItem.vue';
 import { useBreakpoints } from '@/composables/useBreakpoints';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination } from 'swiper';
+import slides from '@/data/TvTrailers.json';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const props = defineProps({
-  slides: {
-    type: Array,
-    require: true
-  }
-});
-
 const modules = [Pagination];
 
-let { isMobile, isTablet, isLaptop } = useBreakpoints();
+let { isMobile, isTablet } = useBreakpoints();
 
 const slidesPerView = computed(() => {
-  if (isMobile()) return 1;
-  if (isTablet()) return 1.7;
-  if (isLaptop()) return 2.1;
-  return 2.5;
+  if (isMobile()) return 1.7;
+  if (isTablet()) return 2.5;
+  return 3;
 });
 </script>
 
 <template>
-  <div class="top-devices-list">
-
+  <div class="tv-trailers-list">
     <swiper
       :slidesPerView="slidesPerView"
       :modules="modules"
       :pagination="true"
     >
       <swiper-slide v-for="slide in slides">
-        <TopDevicesListItem :item="slide" />
+        <img
+          class="tv-trailers-list__image"
+          :src="'./images/tv/trailers/' + slide['image']"
+          :alt="slide['name']"
+        >
       </swiper-slide>
     </swiper>
-
   </div>
 </template>
 
 <style lang="scss">
-.top-devices-list {
-  margin: 1rem 0;
+.tv-trailers-list {
+  margin: 0 auto;
+  max-width: 608px;
+  width: 100%;
+
+  &__image {
+    border-radius: var(--border-radius);
+    max-width: 196px;
+    width: 100%;
+  }
 
   .swiper {
     width: 100%;
