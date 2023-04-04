@@ -38,7 +38,11 @@ const changeSlide = (index) => swiperInstance.slideTo(index);
         <source media="(max-width: 768px)" :srcset="'./images/banners/tablet/' + slide.image">
         <source media="(max-width: 1024px)" :srcset="'./images/banners/laptop/' + slide.image">
         <source media="(max-width: 1280px)" :srcset="'./images/banners/desktop/' + slide.image">
-        <img data-object-fit="cover" :src="'./images/banners/desktop/' + slide.image">
+        <img
+          data-object-fit="cover"
+          :src="'./images/banners/desktop/' + slide.image"
+          :alt="slide.text"
+        >
       </picture>
     </swiper-slide>
   </swiper>

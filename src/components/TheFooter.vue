@@ -43,10 +43,10 @@ import footerLinks from '@/data/FooterLinks.json';
         <p>© Euskaltel, S.A. Todos los derechos reservados.</p>
 
         <div class="footer__social-network-links">
-          <a class="footer__social-network-link" href="#"><IconFacebook /></a>
-          <a class="footer__social-network-link" href="#"><IconTwitter /></a>
-          <a class="footer__social-network-link" href="#"><IconYoutube /></a>
-          <a class="footer__social-network-link" href="#"><IconLinkedin /></a>
+          <a class="footer__social-network-link" href="#" aria-label="Facebook"><IconFacebook /></a>
+          <a class="footer__social-network-link" href="#" aria-label="Twitter"><IconTwitter /></a>
+          <a class="footer__social-network-link" href="#" aria-label="Youtube"><IconYoutube /></a>
+          <a class="footer__social-network-link" href="#" aria-label="Linkedin"><IconLinkedin /></a>
         </div>
       </div>
 

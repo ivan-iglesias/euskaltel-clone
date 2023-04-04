@@ -13,7 +13,7 @@ import TvTrailersList from '@/components/TvTrailersList.vue';
           <TvDeviceInfo />
         </div>
         <div class="tv-section__column">
-          <h4 class="tv-section__subtitle">Nuestros favoritos</h4>
+          <h3 class="tv-section__subtitle">Nuestros favoritos</h3>
           <TvTrailersList />
         </div>
       </div>
