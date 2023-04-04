@@ -14,7 +14,7 @@ let { isMobile, isTablet } = useBreakpoints();
 
 const slidesPerView = computed(() => {
   if (isMobile()) return 1.7;
-  if (isTablet()) return 2.5;
+  if (isTablet()) return 2.6;
   return 3;
 });
 </script>
@@ -23,6 +23,7 @@ const slidesPerView = computed(() => {
   <div class="tv-trailers-list">
     <swiper
       :slidesPerView="slidesPerView"
+      :spaceBetween="16"
       :modules="modules"
       :pagination="true"
     >

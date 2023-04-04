@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { computed } from 'vue';
 import CustomerReviewListItem from '@/components/CustomerReviewListItem.vue';
 import { useBreakpoints } from '@/composables/useBreakpoints';
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -19,16 +19,12 @@ const modules = [Pagination];
 
 let { isMobile, isTablet, isLaptop } = useBreakpoints();
 
-const mobileView = ref(isMobile());
-
 const slidesPerView = computed(() => {
   if (isMobile()) return 1.2;
   if (isTablet()) return 2.2;
   if (isLaptop()) return 3.2;
   return 4.2;
 });
-
-onresize = () => mobileView.value = isMobile();
 </script>
 
 <template>
